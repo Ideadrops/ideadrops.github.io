@@ -58,6 +58,7 @@ hr {
 
 .navbar .menu {
   float:right;
+  display: none;
 }
 
 .navbar ul {
