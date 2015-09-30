@@ -1,124 +1,141 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <title>IdeaDrops</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ideadrops - Coming Soon</title>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-<style>
+<!--- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/fonts/flaticon/flaticon.css">
+<!--- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+<!--- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
-html {
-  overflow-x: hidden;
-  background: transparent url("img/cover.jpeg") repeat scroll 0% 0% / cover;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-}
-h1 {
-  font-size: 150px;
-}
-
-.header-top {
-	height:100%;
-	width:100%;
-	display: table;
-}
-
-.header-text {
-  display: block;
-  text-align: center;
-  color: #FFF;
-  font-weight: 100;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.header-text h1,h2 {
-	  margin: 0;
-}
-
-.header-text h1 {
-	font-weight: 100;
-}
-.header-text h2 {
-		font-weight: 300;
-}
-
-.footer {
-  width:100%;
-  position:absolute;
-  color:white;
-  font-size:12px;
-  bottom:0;
-  text-align: center;
-  margin:10px 0px;
-}
-.footer a {
-  text-decoration: none;
-  color: inherit;
-}
-
-video#bgvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
-}
-
-.overlay {
-  background: rgba(0,0,0,0.05);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  z-index: -99;
-}
-
-.navbar {
-	height:auto;
-	line-height:30px;
-	font-size:30px;
-	width:100%;
-	background:white;
-	border-bottom:apx solid #999;
-}
-
-.content {
-	font-size:25px;
-	height:500px;
-	width:100%;
-	color:white;
-	background:#252525;
-}
-
-.content h1 {
-	font-weight: 100;
-	margin:0 auto;
-}
-
-@media screen and (max-width: 760px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-</style>
 </head>
 <body>
 
-<div class="header-top">
-<video autoplay loop poster="polina.jpg" id="bgvid">
-<source src="vid/paraglide.mp4" type="video/mp4">
-</video>
-<div class="overlay"></div>
-<div class="header-text">
-<h1>ideadrops<small>.xyz</small></h1>
-<h2>lets make the world a better place.</h2>
+<div class="navbar">
+  <div class="container">
+  <div class="logo"><a href="/"><img src="img/logo_transparent.png"></a></div>
+
+  <ul class="menu">
+    <li><a href="/about">
+      <img class="glyphs" src="css/fonts/flaticon/png/idea11.png">About
+    </a></li>
+    <li class="divider">|</li>
+    <li><a href="/mission">
+      <img class="glyphs" src="css/fonts/flaticon/png/heart213.png">Mission
+      </a></li>
+    <li class="divider">|</li>
+    <li><a href="/contact">
+      <img class="glyphs" src="css/fonts/flaticon/png/mail62.png">Contact
+      </a></li>
+  </ul>
+  </div>
 </div>
-<div class="footer"><a href="mailto:team@ideadrops.xyz">Contact</a></div>
+
+<div class="about">
+    <div class="container">
+      <img src="img/logo_transparent.png"></img>
+      <h1>We are an independent public benefit entity that strives to make the world a better place.</h1>
+      <hr>
+    </div>
 </div>
+
+<div class="what-we-do">
+    <div class="container">
+      <h2>How we work:</h2>
+      <div class="row">
+        <div class="one-third column">
+          <img src="css/fonts/flaticon/png/idea11.png">
+          <h3>An idea</h3>
+          <p>Someone comes to us with an idea that will help the world and if we like it we make it -  either for a fee (we have to eat!) or pro-bono (free as in air!).</p>
+        </div>
+        <div class="one-third column">
+          <img src="css/fonts/flaticon/png/configuration8.png">
+          <h3>We do the work</h3>
+          <p>Our small team of wonderful workers will start working on the idea trying to make it come to life and help the world.</p>
+        </div>
+        <div class="one-third column">
+          <img src="css/fonts/flaticon/png/rocket21.png">
+          <h3>Launch!</h3>
+          <p>Once the project is done we help launch it and get it going! (one day we hope we can work on rockets that can actually launch!).</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="projects">
+    <div class="overlay">
+    <h1 style="margin-bottom: 0;">Featured Projects</h1>
+  </div>
+
+<div class="charitydrops">
+  <div class="overlay">
+    <div class="message">Internal</div>
+    <div class="title">
+      <h1>CharityDrops</h1>
+      <h3>a simple and better way to donate to the causes that you love and cherish.</h3>
+        <a class="button button-primary">MORE INFO</a>
+        <a class="button button-primary" href="https://charitydrops.org/" target="_blank">VISIT SITE</a>
+    </div>
+  </div>
+</div>
+
+<div class="readless">
+  <div class="overlay">
+    <div class="message">Internal</div>
+    <div class="message-dev">In Development</div>
+    <div class="title">
+      <h1>Read|Less</h1>
+      <h3>Your News, Just Shorter.</h3>
+        <a class="button button-primary">MORE INFO</a>
+        <a class="button button-primary" href="https://readless.co/" target="_blank">VISIT SITE</a>
+    </div>
+  </div>
+</div>
+
+</div> <!-- End Projects -->
+
+<div class="hireUs">
+    <div class="container">
+      <h1>Have an idea?</h1>
+      <h4>Want to hire us?</h4>
+      <h6><small>Just want to talk about life, the universe, and everything?</h6>
+      <a class="button button-primary">Contact Us</a>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+      Everything is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">Creative Commons 3.0 </a><br>
+      Icons beautifully crafted by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a><br>
+    </div>
+</div>
+<script>
+$(window).scroll(function() {
+   var scroll = $(window).scrollTop();
+
+    //>=, not <=
+   if (scroll >= 300) {
+       //clearHeader, not clearheader - caps H
+       $(".logo").addClass("logo2");
+       $(".navbar").addClass("navbar2");
+     } else {
+       $(".logo").removeClass("logo2");
+       $(".navbar").removeClass("navbar2");
+
+     }
+}); //missing );
+</script>
+</body>
+</html>

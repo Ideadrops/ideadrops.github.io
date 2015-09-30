@@ -1,0 +1,275 @@
+html {
+  background: #f6f6f6;
+}
+
+body {
+  color: #555;
+  font-family: "Lato"
+}
+
+hr {
+  width: 150px;
+}
+
+.button {
+  border-radius: 0;
+}
+
+.navbar {
+  position: fixed;
+  height: auto;
+  z-index: 10;
+  background: #f6f6f6;
+  width: 100%;
+  top:-60px;
+  left:0;
+  transition: all 0.5s;
+  box-shadow: 1px 0px 1px rgba(204,204,204, 0);
+}
+
+.navbar2 {
+  box-shadow: 0px 1px 5px #CCC;
+    background: #fff;
+    transition: all 0.5s;
+}
+
+.navbar:hover {
+  transform: translateY(60px);
+  transition: all 0.5s;
+}
+
+.logo {
+  position: relative;
+  transition: all 0.5s;
+  float:left;
+  margin-top: 72px;
+  opacity: 0;
+}
+
+.logo2 {
+  opacity: 1;
+  transition: all 0.5s;
+
+}
+
+.logo img {
+  width:150px;
+}
+
+.navbar .menu {
+  float:right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin-bottom:0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  padding: 0 10px;
+  margin-top: 1rem;
+}
+
+.navbar ul .divider {
+  font-weight: 100;
+  vertical-align: bottom;
+}
+
+.navbar .glyphs {
+    width: 50px;
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 11px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+.masthead .container {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.about .container {
+  padding:25px;
+  padding-bottom:0;
+  margin-top:5%;
+  text-align:center;
+}
+
+.about .container h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.about .container img {
+  width: 400px;
+}
+
+.what-we-do {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.what-we-do img {
+  width:150px;
+}
+
+.what-we-do h2 {
+  margin-bottom: 5rem;
+}
+
+.what-we-do h3 {
+  margin-bottom: 0.85rem;
+  margin-top: 1rem;
+}
+
+.projects {
+  text-align: center;
+  color:white;
+  background: url("../img/space.jpg") repeat scroll 0% 0%;
+  text-align: center;
+  display: block;
+}
+
+.projects .title{
+  padding:50px 0;
+}
+
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.65) none repeat scroll 0% 0%;
+  height: 100%;
+  display: block;
+  padding: 25px;
+}
+
+.projects .message {
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  padding: 10px 15px;
+  left: 15px;
+}
+
+.projects .message-dev {
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  padding: 10px 15px;
+  right: 15px;
+}
+
+.projects .charitydrops {
+  background: url(../img/projects/charitydrops.png);
+  background-size: cover;
+}
+
+.projects .readless {
+  background: url(../img/projects/readless.jpg);
+  background-size: cover;
+}
+
+.projects .client {
+  background: url("https://unsplash.com/photos/Dd_7xDCuuUo/download");
+  background-size: cover;
+}
+
+.hireUs {
+  padding: 10%;
+}
+
+.hireUs .container {
+  padding:25px;
+  margin-bottom:9rem;
+  margin-top:5%;
+  text-align:center;
+}
+
+.hireUs .container h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.hireUs .button {
+  font-size: 21px;
+  height: 55px;
+  line-height: 55px;
+  text-transform: lowercase;
+}
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  display: block;
+  left: 0px;
+  height: 30px;
+  text-align: center;
+  width: 100%;
+  color: #ccc;
+  margin-bottom: 5rem;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  border-underline: 1px solid #ccc;
+}
+
+
+/* Larger than mobile */
+@media screen and (max-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .navbar:hover {
+    transform: none;
+  }
+  .logo {
+    margin-top:0;
+  }
+
+  .navbar ul li {
+    font-size: 15px;
+}
+
+.navbar .glyphs {
+    display: none;
+  }
+
+}
+
+/* Larger than tablet */
+@media screen and (max-width: 750px) {
+
+  .about .container {
+    padding-top: 0;
+    margin-top: -50px;
+}
+
+  .about .container img {
+    width: 100%;
+}
+
+  .about .container h1 {
+    font-size: 25px;
+  }
+}
+
+/* Larger than desktop */
+@media screen and (max-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media screen and (max-width: 1200px) {}
