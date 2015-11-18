@@ -1,0 +1,31 @@
+<div class="footer">
+<div class="overlay">
+  <p>&copy; 2015 IdeaDrops (a soon-to-be public benefit agency)<br>
+  <a href="https://twitter.com/ideadropsxyz"><i class="ion ion-social-twitter"></i></a>
+  <a href="https://instagram.com/ideadrops"><i class="ion ion-social-instagram"></i></a>
+  <a href="https://blog.ideadrops.xyz"><i class="ion ion-social-rss"></i></a>
+  <br>
+  <a href="https://eff.org" target="_blank"><img src="https://supporters.eff.org/sites/all/themes/frontier/logo.png"></img></a>
+  </p>
+</div>
+</div>
+
+
+<script>
+$(function() {
+  var menuVisible = false;
+  $('.mobile').click(function() {
+    if (menuVisible) {
+      $('.mobile-menu').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('.mobile-menu').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('.close-menu').click(function() {
+    $('.mobile-menu').css({'display':'none'});
+    menuVisible = false;
+  });
+});
+</script>

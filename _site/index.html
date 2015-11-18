@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IdeaDrops- A Public Benefit Development Agency</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+<!--- CSS -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/tooltipster.css" />
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+<!--- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.tooltipster.min.js"></script>
+
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a href="/"><img src="../img/logo_transparent.png"></img></a>
+      <div class="menu animated ">
+        <a href="/what-we-do/">What We Do</a>
+        <a href="/who-we-are/">Who We Are</a>
+        <a href="/our-work/">Our Work</a>
+        <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
+      </div>
+      <div class="mobile"><i class="ion ion-navicon-round"></i></div>
+
+      <div class="mobile-menu">
+        <a class="close-menu">CLOSE MENU</a>
+        <a href="/what-we-do/">What We Do</a>
+        <a href="/who-we-are/">Who We Are</a>
+        <a href="/our-work/">Our Work</a>
+        <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
+      </div>
+
+
+
+
+  </div>
+  </div>
+
+
+<div class="animated fadeInUpBig">
+<div class="mast bg index">
+    <div class="container" style="padding: 5% 10% 0%;">
+      <h3>Web &nbsp; - &nbsp; Mobile  &nbsp; - &nbsp; E-Commerce &nbsp; - &nbsp; Development &nbsp;&amp;&nbsp; Design</h3>
+      <h1>We are an independent <a class="publicBenefit">public benefit</a><small class="publicBenefit-question">?</small> development agency that strives to make the world a better place.</h1>
+      <p><span class="new">New!</span> <a href="/what-we-do/">Free professional development work for smaller projects and nonprofts!</a></p>
+    </div>
+
+    <hr>
+
+</div>
+
+<div class="about" style="margin: 0 auto;">
+    <div class="container">
+
+  <div class="row" style="max-width: 900px;margin: 0 auto;padding: 25px;">
+
+    <div class="one-third column">
+
+      <h3>1. &nbsp; Idea</h3>
+      <p>Someone comes to us with an idea that will help the world and if we like it we make it -  either for a fee (we have to eat!) or pro-bono (free as in air!).</p>
+    </div>
+    <div class="one-third column">
+
+      <h3>2. &nbsp; We Do The Work</h3>
+      <p>Our small team of designers and developers will start working directly with you on the idea trying to make it come to life and help the world.</p>
+    </div>
+    <div class="one-third column">
+
+      <h3>3. &nbsp; The Launch</h3>
+      <p>Once the project is done we help launch it and get it going! (one day we hope we can work on rockets that can actually launch!).</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="footer">
+<div class="overlay">
+  <p>&copy; 2015 IdeaDrops (a soon-to-be public benefit agency)<br>
+  <a href="https://twitter.com/ideadropsxyz"><i class="ion ion-social-twitter"></i></a>
+  <a href="https://instagram.com/ideadrops"><i class="ion ion-social-instagram"></i></a>
+  <a href="https://blog.ideadrops.xyz"><i class="ion ion-social-rss"></i></a>
+  <br>
+  <a href="https://eff.org" target="_blank"><img src="https://supporters.eff.org/sites/all/themes/frontier/logo.png"></img></a>
+  </p>
+</div>
+</div>
+
+
+<script>
+$(function() {
+  var menuVisible = false;
+  $('.mobile').click(function() {
+    if (menuVisible) {
+      $('.mobile-menu').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('.mobile-menu').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('.close-menu').click(function() {
+    $('.mobile-menu').css({'display':'none'});
+    menuVisible = false;
+  });
+});
+</script>
+
+
+  <script>
+         $(document).ready(function() {
+             $('.publicBenefit-question').tooltipster({
+               animation: 'fade',
+               delay: 200,
+               maxWidth: 200,
+               position: 'bottom-right',
+               content: $('<span style="background:#fff;"><strong>We are legally obligated to create a positive impact on society and the environment in an effort to make the world a better place.</strong></span>')
+             });
+         });
+     </script>
+</body>
+</html>
