@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What is a Public Benefit Agency?"
-permalink: public-benefit-agency
+permalink: /public-benefit-agency/
 ---
 A benefit agency (or corporation) is a new class of company that voluntarily meets different standards of purpose, accountability, and transparency.  
 
