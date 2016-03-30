@@ -633,6 +633,10 @@ div#tipDiv {
     margin: 0;
   }
 
+  .team img {
+  margin-bottom: 5px;
+  }
+
 }
 
 /* Larger than Desktop HD */
