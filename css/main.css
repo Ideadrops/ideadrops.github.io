@@ -211,51 +211,83 @@ hr {
   border-bottom: 1px solid #222;
 }
 
-.page .bottombar {
-  position:relative;
+
+ .team {
+   background-size: cover !important;
 }
 
-.page .team {
-  text-align: center;
-}
-
-
-.page .team .member {
-  margin-bottom: 50px;
-  margin: 24px;
+.team .row {
+  background: rgba(0,0,0,0.35);
   padding: 50px;
+  color: #fff;
 }
 
-.page .team img {
+.team .member {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.team .member .right {
+  text-align: right;
+}
+
+.team .member .right-img {
+  float: right;
+  margin-right: 30px;
+}
+
+
+ .team img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border:2px solid #222;
+  border: 30px solid #fff;  display: inline-block;
+  vertical-align: middle;
 }
 
-.page .team h2 {
+ .team h2 {
     font-weight: 500;
     padding: 0;
     margin: 0;
     font-size: 3.8rem;
 }
 
-.page .team p {
+ .team .content {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 50px;
+}
+
+ .team p {
   padding: 0;
-  margin: 0;
+  margin: 5px 0;
+  font-size: 19px;
 }
 
-.page .team .media {
-      padding-top: 10px;
+.team .sub {
+  background: rgb(0, 198, 104) none repeat scroll 0% 0%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
 }
 
 
-.page .team .media a {
+ .team .media a {
   font-size: 25px;
-  margin: 0 12px;
   display: inline-block;
   text-decoration: none;
   border: none;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.team .media a:nth-child(2) {
+  margin-left: 12px;
+}
+
+.team .media .ion-ios-email {
+  font-size: 28px;
+  margin-top: 1px;
 }
 
 .pricing {
@@ -371,9 +403,19 @@ hr {
 }
 
 .bottom {
-  margin: 50px auto;
   text-align: center;
   font-size: 21px;
+  height: 300px;
+}
+
+.bottom .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .btn-main {
@@ -382,6 +424,13 @@ hr {
   background: rgb(0, 198, 104);
   color: #fff;
   transition: 0.3s;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 19px;
+}
+
+.btn-round {
+  border-radius: 5px;
 }
 
 .btn-main:hover {
@@ -394,55 +443,65 @@ hr {
 .about h3 {
   font-size: 22px;
 }
-.bottombar {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+
+.advertisement {
+  background: #000;
+  color: #fff;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
-.bottombar .container {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
+.advertisement .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding:50px;
+  padding-bottom: 95.2px;
 }
 
-.bottombar .three {
-  width: 25%;
-  margin-left: 0;
+.advertisement .sub {
+  font-family: "Montserrat";
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 21px;
 }
 
-.bottombar a {
-    display: inline-block;
-    text-align: center;
-    color: #222;
-    float: left;
-    text-decoration: none;
-    border-right: 1px solid rgba(255,255,255,0.01);
-    padding: 25px 0;
-    transition: all 0.6s;
-        width: 100%;
-
+.advertisement .content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.bottombar a:hover {
-  transition: all 0.6s;
-  }
-
-.bottombar a:first-child {
-
+.advertisement .content .title {
+  font-family: "Montserrat";
+  margin-bottom: 10px;
 }
 
-.bottombar a:nth-child(2) {
-
+.advertisement .quote {
+  display: inline-block;
+  padding: 15px 20px;
+  margin-left: -50px;
+  margin-right: -50px;
+  font-weight: 100;
+  font-size: 25px;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
 }
 
-.bottombar a:nth-child(3) {
-
+.advertisement .quote span {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
 }
 
-.bottombar a:nth-child(4) {
-  border: none;
+.advertisement p {
+  font-size: 18px;
+}
+
+.advertisement strong {
+  font-size: 20px;
+}
+
+.advertisement a {
+  color: #fff;
 }
 
 .animated {
@@ -557,6 +616,21 @@ div#tipDiv {
 
   .about .container {
     padding-top: 0 !important;
+  }
+
+  .team .columns {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  .team .member, .team .member .right {
+    text-align: center;
+  }
+
+  .team .member .right-img {
+    float: none;
+    margin: 0;
   }
 
 }

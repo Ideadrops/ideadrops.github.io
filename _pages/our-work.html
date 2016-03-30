@@ -1,17 +1,17 @@
 ---
 title: "Our Work"
 permalink: /our-work/
+description: We are a small team who has worked on over a dozen projects trying to make the world a better place.
 ---
 
 {% include header.html %}
 
 <div class="animated fadeInUpBig">
 <div class="mast page bg">
-    <div class="container"  style="padding: 2% 0%; padding-bottom: 2%; text-align:center;">
+    <div class="container" style="padding: 2% 0%; padding-bottom: 2%; text-align:center;">
       <h1 style="text-align:center;">{{ page.title }}</h1>
       <hr>
-      <p>We are a small team who has worked on over a dozen projects trying to make the world a better place.<br>
-      Our projects are seen by and used by over a million people every month.</p>
+      <p>{{ page.description }}</p>
       </div>
 </div>
 
@@ -60,8 +60,10 @@ permalink: /our-work/
     </div>
 
     <div class="bottom">
-      <p>Interested in our services?</p>
-      <a class="btn-main" href="mailto:team@ideadrops.xyz">Contact Us</a>
+      <div class="content">
+        <p>Interested in our services?</p>
+        <a class="btn-main" href="mailto:team@ideadrops.xyz">Contact Us</a>
+      </div>
     </div>
   </div>
 

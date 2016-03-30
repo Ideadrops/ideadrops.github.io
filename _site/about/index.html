@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> About |  IdeaDrops - Public Benefit Agency</title>
+  <meta name="description" content="We are a a public benefit development and advertising agency who has worked on dozens of projects that reach millions of people every month.">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+<!--- CSS -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/tooltipster.css" />
+
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+<!--- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.tooltipster.min.js"></script>
+
+
+</head>
+<body id="body">
+  <div class="navbar">
+    <div class="container">
+      <a href="/"><img src="../img/logo_transparent.png"></img></a>
+      <div class="menu animated ">
+        <a href="/about/">About</a>
+        <a href="/our-work/">Our Work</a>
+        <div onclick="services()" class="dropdown">Services <i onclick="services()" class="ion ion-ios-arrow-down"></i>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/advertising/">Advertising</a>
+            <a href="/development/">Web Development</a>
+          </div>
+        </div>
+        <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
+      </div>
+      <div class="mobile"><i class="ion ion-navicon-round"></i></div>
+
+      <div class="mobile-menu">
+        <a class="close-menu">CLOSE MENU</a>
+        <a href="/about/">About</a>
+        <a href="/our-work/">Our Work</a>
+        <a href="/advertising/">Advertising</a>
+        <a href="/development/">Web Development</a>
+        <a href="/contact" class="inverted">Contact Us</a>
+      </div>
+
+
+
+
+  </div>
+  </div>
+
+
+<div class="animated fadeInUpBig">
+<div class="mast page bg">
+    <div class="container" style="padding: 2% 0%; padding-bottom: 2%; text-align:center;">
+      <h1 style="text-align:center;">About</h1>
+      <hr>
+      <p>We are a a public benefit development and advertising agency who has worked on dozens of projects that reach millions of people every month.</p>
+        <a class="btn-main btn-round" href="/our-work">Our Work</a>
+        <a class="btn-main btn-round" href="/our-work">Web Development</a>
+        <a class="btn-main btn-round" href="/our-work">Advertising Service</a>
+      </div>
+</div>
+
+<div class="team" style="background: url('/img/banner/mtns.jpg')">
+  <div class="row">
+    <div class="member">
+      <div class="three columns">
+        <img src="https://scontent.fmci1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/156280_10204016770498421_4310647892201126358_n.jpg?oh=8b9becab6e4f8ca7f18b47730c214ea2&oe=5777C556"></img>
+      </div>
+      <div class="nine columns content">
+        <h2>Macleod Sawyer</h2>
+        <p class="sub">CEO & Founder</p>
+        <p>Had his first company aquired at 16, now runs three more and has over half a million followers across his blogs.</p>
+
+        <p class="media">
+          <a href="https://macleodsawyer.com" target="_blank"><i class="ion ion-share"></i></a>
+          <a href="mailto:macleod@ideadrops.xyz" target="_blank"><i class="ion ion-ios-email"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="three columns right-img">
+        <img src="/img/team/david.jpg"></img>
+      </div>
+      <div class="eight columns right content">
+        <h2>David Crosby</h2>
+        <p class="sub">CTO & Lead Developer</p>
+        <p>Currently a student at the University of Arkansas, enjoys programming, linux and mathematics.</p>
+
+        <p class="media">
+          <a href="mailto:david@ideadrops.xyz" target="_blank"><i class="ion ion-ios-email"></i></a>
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="bottom">
+  <div class="content">
+    <p>Want to learn more about us?</p>
+    <a class="btn-main" href="mailto:team@ideadrops.xyz">Contact Us</a>
+  </div>
+</div>
+
+  </div>
+
+
+</div></div>
+<div class="footer">
+  <p><img src="/img/logo.png" class="brand"></img> <br>&copy; 2015-2016 IdeaDrops (a public benefit agency)
+  </p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function services() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<script>
+$(function() {
+  var menuVisible = false;
+  $('.mobile').click(function() {
+    if (menuVisible) {
+      $('.mobile-menu').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('.mobile-menu').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('.close-menu').click(function() {
+    $('.mobile-menu').css({'display':'none'});
+    menuVisible = false;
+  });
+});
+</script>
+
