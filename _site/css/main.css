@@ -444,20 +444,20 @@ hr {
   font-size: 22px;
 }
 
-.advertisement {
+.service {
   background: #000;
   color: #fff;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
-.advertisement .overlay {
+.service .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding:50px;
   padding-bottom: 95.2px;
 }
 
-.advertisement .sub {
+.service .sub {
   font-family: "Montserrat";
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
   display: inline-block;
@@ -465,17 +465,17 @@ hr {
   font-size: 21px;
 }
 
-.advertisement .content {
+.service .content {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.advertisement .content .title {
+.service .content .title {
   font-family: "Montserrat";
   margin-bottom: 10px;
 }
 
-.advertisement .quote {
+.service .quote {
   display: inline-block;
   padding: 15px 20px;
   margin-left: -50px;
@@ -486,21 +486,21 @@ hr {
   background: rgba(0,0,0,0.6);
 }
 
-.advertisement .quote span {
+.service .quote span {
   display: block;
   font-size: 21px;
   font-weight: 900;
 }
 
-.advertisement p {
+.service p {
   font-size: 18px;
 }
 
-.advertisement strong {
+.service strong {
   font-size: 20px;
 }
 
-.advertisement a {
+.service a {
   color: #fff;
 }
 
