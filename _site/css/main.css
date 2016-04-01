@@ -429,6 +429,11 @@ hr {
   font-size: 19px;
 }
 
+.btn-main .ion {
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
 .btn-round {
   border-radius: 5px;
 }
