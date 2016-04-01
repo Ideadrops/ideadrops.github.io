@@ -1,13 +1,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>IdeaDrops- A Public Benefit Development Agency</title>
-  <meta name="description" content="">
+  <title> Our Work |  IdeaDrops - Public Benefit Agency</title>
+  <meta name="description" content="We are a small team who has worked on over a dozen projects trying to make the world a better place.">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
 
 <!--- CSS -->
@@ -24,24 +25,30 @@
 
 
 </head>
-<body>
+<body id="body">
   <div class="navbar">
     <div class="container">
       <a href="/"><img src="../img/logo_transparent.png"></img></a>
       <div class="menu animated ">
-        <a href="/what-we-do/">What We Do</a>
-        <a href="/who-we-are/">Who We Are</a>
+        <a href="/about/">About</a>
         <a href="/our-work/">Our Work</a>
+        <div onclick="services()" class="dropdown">Services <i onclick="services()" class="ion ion-ios-arrow-down"></i>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/advertising/">Advertising</a>
+            <a href="/development/">Web Development</a>
+          </div>
+        </div>
         <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
       </div>
       <div class="mobile"><i class="ion ion-navicon-round"></i></div>
 
       <div class="mobile-menu">
         <a class="close-menu">CLOSE MENU</a>
-        <a href="/what-we-do/">What We Do</a>
-        <a href="/who-we-are/">Who We Are</a>
+        <a href="/about/">About</a>
         <a href="/our-work/">Our Work</a>
-        <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
+        <a href="/advertising/">Advertising</a>
+        <a href="/development/">Web Development</a>
+        <a href="/contact" class="inverted">Contact Us</a>
       </div>
 
 
@@ -53,36 +60,93 @@
 
 <div class="animated fadeInUpBig">
 <div class="mast page bg">
-    <div class="container"  style="padding: 2% 0%; padding-bottom: 2%; text-align:center;">
+    <div class="container" style="padding: 2% 0%; padding-bottom: 2%; text-align:center;">
       <h1 style="text-align:center;">Our Work</h1>
       <hr>
-      <p>We are a small team who has worked on over a dozen projects trying to make the world a better place.<br>
-      Our projects are seen by and used by over a million people every month.</p>
+      <p>We are a small team who has worked on over a dozen projects trying to make the world a better place.</p>
       </div>
 </div>
 
-<div class="project">
-  <div class="container">
-    <a href="https://charitydrops.org" target="_blank"><img src="/img/projects/charitydrops_blue.png"></img></a>
-    <img src="/img/projects/mxmedia.png" class="two"></img>
-    <a href="http://readless.co" target="_blank"><img src="/img/projects/readless.png" class="three"></img></a>
+<div class="project" style="background: url('/img/projects/cd-bg.jpg')">
+  <div class="overlay"></div>
+      <div class="work">
+        <img src="/img/projects/cd.png"></img>
+        <div class="content">
+          <span class="title">CharityDrops.org</span>
+          <span class="meta two">
+            <a href="https://charitydrops.org/" class="link" target="_blank">View Project</a>
+            <a href="https://charitydrops.org/donate" class="link" target="_blank" style="background: #008Fe9;"><i class="ion ion-ios-heart"></i> Donate</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="project" style="background: url('/img/projects/rl.png')">
+  <div class="overlay"></div>
+      <div class="work">
+        <img src="/img/projects/rl.png"></img>
+        <div class="content">
+          <span class="title">Read|Less</span>
+          <span class="meta one">
+            <a href="http://readlessco.github.io/" class="link" target="_blank">View Project</a>
+          </span>
+        </div>
+      </div>
+</div>
+
+<div class="project" style="background: url('/img/projects/sd-bg.jpg');">
+  <div class="overlay"></div>
+      <div class="work">
+        <img src="/img/projects/sd.png"></img>
+        <div class="content">
+          <span class="title">SandersDemocrats.org</span>
+          <span class="meta one">
+            <a href="http://sandersdemocrats.org/" class="link" target="_blank">View Project</a>
+          </span>
+        </div>
+      </div>
+</div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <div class="content">
+        <p>Interested in our services?</p>
+        <a class="btn-main" href="mailto:team@ideadrops.xyz">Contact Us</a>
+      </div>
+    </div>
   </div>
-</div>
 
-
-</div>
-
+</div></div>
 <div class="footer">
-<div class="overlay">
-  <p>&copy; 2015 IdeaDrops (a soon-to-be public benefit agency)<br>
-  <a href="https://twitter.com/ideadropsxyz"><i class="ion ion-social-twitter"></i></a>
-  <a href="https://instagram.com/ideadrops"><i class="ion ion-social-instagram"></i></a>
-  <a href="https://blog.ideadrops.xyz"><i class="ion ion-social-rss"></i></a>
-  <br>
-  <a href="https://eff.org" target="_blank"><img src="https://supporters.eff.org/sites/all/themes/frontier/logo.png"></img></a>
+  <p><img src="/img/logo.png" class="brand"></img> <br>&copy; 2015-2016 IdeaDrops (a public benefit agency)
   </p>
 </div>
-</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function services() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 <script>

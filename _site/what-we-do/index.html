@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>IdeaDrops- A Public Benefit Development Agency</title>
+  <title> What We Do |  IdeaDrops - Public Benefit Agency</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
 
 <!--- CSS -->
@@ -25,24 +26,30 @@
 
 
 </head>
-<body>
+<body id="body">
   <div class="navbar">
     <div class="container">
       <a href="/"><img src="../img/logo_transparent.png"></img></a>
       <div class="menu animated ">
-        <a href="/what-we-do/">What We Do</a>
-        <a href="/who-we-are/">Who We Are</a>
+        <a href="/about/">About</a>
         <a href="/our-work/">Our Work</a>
+        <div onclick="services()" class="dropdown">Services <i onclick="services()" class="ion ion-ios-arrow-down"></i>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/advertising/">Advertising</a>
+            <a href="/development/">Web Development</a>
+          </div>
+        </div>
         <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
       </div>
       <div class="mobile"><i class="ion ion-navicon-round"></i></div>
 
       <div class="mobile-menu">
         <a class="close-menu">CLOSE MENU</a>
-        <a href="/what-we-do/">What We Do</a>
-        <a href="/who-we-are/">Who We Are</a>
+        <a href="/about/">About</a>
         <a href="/our-work/">Our Work</a>
-        <a href="mailto:team@ideadrops.xyz" class="inverted">Contact Us</a>
+        <a href="/advertising/">Advertising</a>
+        <a href="/development/">Web Development</a>
+        <a href="/contact" class="inverted">Contact Us</a>
       </div>
 
 
@@ -56,31 +63,44 @@
     <div class="container animated fadeInUpBig" style="padding: 2% 10% 10%;">
       <h1>What We Do</h1>
       <p>We are a public benefit agency, which means we ​have made it our mission to only do good work for good organizations and projects.</p>
-<p>Because of this, we design and develop websites, apps, technology, and software for organizations that strive to make the world a better, more awesome, place for everyone.</p>
-<p>For larger projects, companies, and organizations we only charge what is needed. Nothing more. <a href="/contact">Contact us to get a quote!</a>
+<p>Because of this, we design and develop websites and software for organizations that strive to make the world a better place for everyone.</p>
 <h2>Free Work</h2>
-<p>Because we strive to make the world a better place we also do <strong>free</strong> professional development and design for smaller nonprofit organizations. Are you a nonprofit? <a href="/contact.html">Email us!</a>
+<p>Because we strive to make the world a better place we also do <strong>free</strong> professional development and design for smaller nonprofit organizations. Are you a nonprofit? <a href="macleod@ideadrops.xyz">Email us!</a>
 
-<h2>Referral System</h2>
-<p>We also offer a referral system! What is that? Well, for every person you refer to us, you will receive either $25 and/or 3% commision cut from the final cost we charge to the company/organization! That's basically just free money!</p>
-
-</p></p>
+</p>
 
       </div>
 
 </div>
 
+</div></div>
 <div class="footer">
-<div class="overlay">
-  <p>&copy; 2015 IdeaDrops (a soon-to-be public benefit agency)<br>
-  <a href="https://twitter.com/ideadropsxyz"><i class="ion ion-social-twitter"></i></a>
-  <a href="https://instagram.com/ideadrops"><i class="ion ion-social-instagram"></i></a>
-  <a href="https://blog.ideadrops.xyz"><i class="ion ion-social-rss"></i></a>
-  <br>
-  <a href="https://eff.org" target="_blank"><img src="https://supporters.eff.org/sites/all/themes/frontier/logo.png"></img></a>
+  <p><img src="/img/logo.png" class="brand"></img> <br>&copy; 2015-2016 IdeaDrops (a public benefit agency)
   </p>
 </div>
-</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function services() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 <script>

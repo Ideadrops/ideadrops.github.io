@@ -1,14 +1,31 @@
+</div></div>
 <div class="footer">
-<div class="overlay">
-  <p>&copy; 2015 IdeaDrops (a soon-to-be public benefit agency)<br>
-  <a href="https://twitter.com/ideadropsxyz"><i class="ion ion-social-twitter"></i></a>
-  <a href="https://instagram.com/ideadrops"><i class="ion ion-social-instagram"></i></a>
-  <a href="https://blog.ideadrops.xyz"><i class="ion ion-social-rss"></i></a>
-  <br>
-  <a href="https://eff.org" target="_blank"><img src="https://supporters.eff.org/sites/all/themes/frontier/logo.png"></img></a>
+  <p><img src="/img/logo.png" class="brand"></img> <br>&copy; 2015-2016 IdeaDrops (a public benefit agency)
   </p>
 </div>
-</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function services() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 <script>
