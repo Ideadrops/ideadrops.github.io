@@ -51,3 +51,8 @@ Ads appearing on any of our websites may be delivered to users by advertising pa
 
 Although most changes are likely to be minor, IdeaDrops may change its Privacy Policy from time to time, and in IdeaDrops’s sole discretion. IdeaDrops encourages visitors to frequently check this page for any changes to its Privacy Policy. If you have a CharityDrops.org account, you should also check your account page for alerts to these changes. Your continued use of this site or it’s services after any change in this Privacy Policy will constitute your acceptance of such change.
 
+---
+
+## Refund Policy
+
+If you are not 100% satisfied with your purchase, within 7 days from the purchase date, we will fully refund the cost of your order.
