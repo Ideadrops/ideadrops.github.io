@@ -3,7 +3,6 @@ layout: post
 title: "Privacy Policy"
 permalink: privacy
 ---
-# **Privacy Policy**
 
 *Your privacy is critically important to us. At **IdeaDrops** we have a few fundamental principles:*
 
